@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>juegalos</groupId>
+  <artifactId>juegalos</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Juegalos</name>
+  <description>Aplicación que simula el alquiler de videojuegos entre varios usuarios. Ellos mismos al mismo tiempo son los que nutren de videojuegos la aplicación. Reciben una transferencia por cada alquiler efectivo de sus videojuegos tras la realización de las facturas.</description>
+  
+  <dependencies>
+  
+    <!-- Añadir JCalendar -->
+    <dependency>
+      <groupId>com.toedter</groupId>
+      <artifactId>jcalendar</artifactId>
+      <version>1.4</version>
+    </dependency>
+    
+    <!-- Añadir MySQL Connector/J -->
+    <dependency>
+      <groupId>io.github.icemap</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.20</version>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
