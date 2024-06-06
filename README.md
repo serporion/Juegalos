@@ -67,7 +67,7 @@ Archivo que gestiona la instalación de dependencias por ser un proyecto con esq
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/juegalos.git
+   git clone https://github.com/serporion/juegalos.git
    cd juegalos
    ```
 
@@ -92,16 +92,18 @@ Archivo que gestiona la instalación de dependencias por ser un proyecto con esq
        Abre el proyecto y configura y ejecuta la clase principal que inicia esta aplicación. Este proyecto se inicia con la clase **entradalogin.java** localizada en **`src/formularios/`**.
 
    - Esta aplicación no utiliza Spring Boot ni ningún otro framework.
+
    - Usando Maven:
      - Compila el paquete
      ```bash   
       mvn clean package
      ```
-     - Ejecuta el Archivo JAR Generado
+     - Ejecución el Archivo JAR Generado
      ```bash   
-      java -jar target/nombre-del-archivo.jar
+      java -jar target/juegalos-0.0.1-SNAPSHOT.jar
      ```
      - Asegúrate de que la base de datos esté configurada y accesible antes de ejecutar el archivo JAR.
+
 
 ## Documentación
 
